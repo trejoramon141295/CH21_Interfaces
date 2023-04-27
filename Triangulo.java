@@ -45,4 +45,4 @@ public class Triangulo {
 	public String toString() {
 		return "Triángulo [name=" + name + ", base=" + base + ", altura=" + altura + ", lado=" + lado + "]";
 	}//toString
-}//class Triangulo
+}//class_Triangulo
