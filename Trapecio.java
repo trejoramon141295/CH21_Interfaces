@@ -1,5 +1,5 @@
 
-public class Trapecio {
+public class Trapecio implements Calcular {
 	private String name;
 	private double lado1;
 	private double lado2;
@@ -23,11 +23,12 @@ public class Trapecio {
 		this.altura = altura;
 	}//constructor
 	
+	//Los_estan_relacionados_con_la_interfaz_no_olvidar_this
 	public double calcularArea() {
-		return (getAltura()*(getBaseMayor()+getBaseMenor()))/2;	
+		return (this.getAltura()*(this.getBaseMayor()+this.getBaseMenor()))/2;	
 	}//calcularArea
 	public double calcularPerimetro() {
-		return getLado1()+getLado2()+getLado3()+getLado4();
+		return (this.getLado1()+this.getLado2()+this.getLado3()+this.getLado4());
 	}// calcularPerimetro
 	
 	public String getName() {

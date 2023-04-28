@@ -1,5 +1,5 @@
-
-public class Cuadrado {
+//No_olvidar_implents_Y_la_interfaz
+public class Cuadrado implements Calcular{
 	private String name;
 	private double lado;
 	
@@ -9,12 +9,13 @@ public class Cuadrado {
 		this.lado = lado;
 	}//constructor
 	
+	//Los_estan_relacionados_con_la_interfaz_no_olvidar_this
 	public double calcularPerimetro() {
-		return getLado()*4;		
+		return this.getLado()*4;		
 	}//calcularPerimetro
 	
 	public double calcularArea() {
-		return Math.pow(getLado(), 2);
+		return Math.pow(this.getLado(), 2);
 	}//calcularArea
 
 	public String getName() {

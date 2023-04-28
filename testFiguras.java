@@ -19,15 +19,22 @@ public class testFiguras {
 //		imprimirCalculo(rec1); imprimirCalculo(rec2);
 //		imprimirCalculo(rombo1); imprimirCalculo(rombosman);
 //		imprimirCalculo(romboide1); imprimirCalculo(romboide2);
-		imprimirCalculo(trap1); imprimirCalculo(trap2);
+//		imprimirCalculo(trap1); imprimirCalculo(trap2);
+		
+		Figuras.imprimirCalculo(t1);		Figuras.imprimirCalculo(t2);
+		Figuras.imprimirCalculo(c1); 		Figuras.imprimirCalculo(c2);
+		Figuras.imprimirCalculo(rec1); 		Figuras.imprimirCalculo(rec2);
+		Figuras.imprimirCalculo(rombo1); 	Figuras.imprimirCalculo(rombosman);
+		Figuras.imprimirCalculo(trap1); 	Figuras.imprimirCalculo(trap2);
 		
 	}//main
-
-	public static void imprimirCalculo(Trapecio t) {
-		System.out.println(t);
-		System.out.println("+========================================");
-		System.out.println("|El área de ["+t.getName()+"] es: " + t.calcularArea() + 
-				"\n" + "|El perímetro de ["+t.getName()+"] es: " + t.calcularPerimetro());
-		System.out.println("+========================================");
-	}//imprimirCalculo
+//	Se_comento_para_probar_la_interfaz
+//	public static void imprimirCalculo(Trapecio t) {
+//		System.out.println(t);
+//		System.out.println("+========================================");
+//		System.out.println("|El área de ["+t.getName()+"] es: " + t.calcularArea() + 
+//				"\n" + "|El perímetro de ["+t.getName()+"] es: " + t.calcularPerimetro());
+//		System.out.println("+========================================");
+//	}//imprimirCalculo
+	
 }//class testFiguras

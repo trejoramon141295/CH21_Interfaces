@@ -1,18 +1,19 @@
-
-public class Rombo {
+//No_olvidar_implents_Y_la_interfaz
+public class Rombo implements Calcular {
 	private String name;
 	private double diagonalMenor;
 	private double diagonalMayor;
 	private double lado;//Idea_usar_diagonales_para_calcular_lado
 	
 	public Rombo(String name, double diagonalMenor, double diagonalMayor, double lado) {
-		//super();
+		super();//Investigar_bien_el_porque
 		this.name = name;
 		this.diagonalMenor = diagonalMenor;
 		this.diagonalMayor = diagonalMayor;
 		this.lado = lado;
 	}//constructor
 	
+	//TODO Aqui_no_use_el_this,_investigar_porque_usar_super_funciono_de_igual_manera
 	public double calcularArea() {
 		return (getDiagonalMayor()*getDiagonalMenor())/2;	
 	}//calcularArea

@@ -1,23 +1,24 @@
-
-public class Rectangulo {
+//No_olvidar_implents_Y_la_interfaz
+public class Rectangulo implements Calcular {
 	//Idea_Rectangulo_y_Romboide_son_casi_lo_mismo_
 	private String name;
 	private double base;
 	private double altura;
 	
 	public Rectangulo(String name, double base, double altura) {
-		//super();
+		super();
 		this.name = name;
 		this.base = base;
 		this.altura = altura;
 	}//constructor
 	
+	//Los_estan_relacionados_con_la_interfaz_no_olvidar_this
 	public double calcularArea() {
-		return getAltura()*getBase();		
+		return this.getAltura()*this.getBase();		
 	}//calcularArea
 	
 	public double calcularPerimetro() {
-		return (2*getAltura())+(2*getBase());		
+		return (2*this.getAltura())+(2*this.getBase());		
 	}//calcularPerimetro
 
 	public String getName() {

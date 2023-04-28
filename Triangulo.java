@@ -1,4 +1,5 @@
-public class Triangulo {
+public class Triangulo implements Calcular
+{
 	private String name;
 	private double base;
 	private double altura;
@@ -11,10 +12,10 @@ public class Triangulo {
 	}//Constructor
 	
 	public double calcularArea() {
-		return (getBase() * getAltura())/2;	
+		return (this.getBase() * this.getAltura())/2;	
 	}//calcularArea
 	public double calcularPerimetro() {
-		return (getLado() + getLado() + getLado());
+		return (this.getLado() + this.getLado() + this.getLado());
 	}// calcularPerimetro
 		
 	public String getName() {
